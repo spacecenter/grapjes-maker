@@ -313,6 +313,52 @@ footer {
   color: var(--text-muted);
 }
 
+/* ─── Retention / Cookie Tables ─────────────────────────────────────────── */
+.retention-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0 1.5rem;
+  font-size: var(--font-sm);
+}
+.retention-table th,
+.retention-table td {
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  border: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.retention-table th {
+  background: rgba(108, 59, 255, 0.15);
+  color: var(--text);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.retention-table td {
+  color: var(--text-muted);
+}
+.retention-table td:first-child {
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .retention-table,
+  .retention-table thead,
+  .retention-table tbody,
+  .retention-table th,
+  .retention-table td,
+  .retention-table tr { display: block; }
+  .retention-table thead { display: none; }
+  .retention-table td { border-top: none; }
+  .retention-table td:first-child {
+    background: rgba(108, 59, 255, 0.1);
+    padding-top: 0.75rem;
+    white-space: normal;
+  }
+  .retention-table tr { border: 1px solid var(--border); margin-bottom: 0.75rem; border-radius: var(--radius-sm); overflow: hidden; }
+}
+
 /* ─── Responsive ────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   :root {
