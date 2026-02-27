@@ -28,7 +28,7 @@
   <main>
     <div class="page-hero">
       <h1>Privacy Policy</h1>
-      <p class="meta">Last Updated: 26 February 2026 (rev. 3) &nbsp;·&nbsp; Governing Law: The Netherlands</p>
+      <p class="meta">Last Updated: 27 February 2026 (rev. 4) &nbsp;·&nbsp; Governing Law: The Netherlands</p>
     </div>
 
     <div class="prose">
@@ -59,8 +59,8 @@
       <h2 id="api-scopes">3. Third-Party Platform Integrations &amp; API Scopes</h2>
       <p>
         Grapjes Maker integrates with third-party social media platforms using their official
-        developer APIs. Currently, the Service integrates with <strong>TikTok</strong> and
-        <strong>YouTube (Google)</strong>, and may integrate with additional platforms in the
+        developer APIs. Currently, the Service integrates with <strong>TikTok</strong>,
+        <strong>YouTube (Google)</strong>, and <strong>Instagram (Meta)</strong>, and may integrate with additional platforms in the
         future. To use platform-related features you must authenticate with the respective
         platform account.
       </p>
@@ -148,7 +148,44 @@
         including the Limited Use requirements.
       </p>
 
-      <h3>3.3 Future Platform Integrations</h3>
+      <h3>3.3 Instagram API (Meta)</h3>
+      <p>
+        When you connect your Instagram account, your browser communicates directly with Meta's
+        OAuth and Instagram Graph API servers. We request the following OAuth permissions (scopes):
+      </p>
+      <ul>
+        <li>
+          <strong><code>instagram_basic</code> — Basic profile:</strong>
+          Used to retrieve your Instagram username, profile picture URL, and account ID so we can
+          personalise your experience and associate published content with your account.
+        </li>
+        <li>
+          <strong><code>instagram_content_publish</code> — Publish content:</strong>
+          Used to publish joke images or videos you create via the Service directly to your
+          Instagram profile on your behalf. Content data and metadata are transmitted directly to
+          Meta's content publishing API endpoint. No content is ever posted without your direct action.
+        </li>
+        <li>
+          <strong>Additional future Instagram scopes:</strong> Should we integrate further Instagram
+          features, we may request additional scopes and will update this policy before those
+          features become active.
+        </li>
+      </ul>
+      <p>
+        <strong>Data flow:</strong> When you log in via Instagram or publish content, your
+        credentials and content are sent directly to Meta's API infrastructure. Meta processes
+        this data according to its own
+        <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Meta Privacy Policy</a>.
+        We do not control Meta's subsequent use of data transmitted to their servers.
+      </p>
+      <p>
+        <strong>Data received from Instagram / Meta:</strong> In response to the scopes granted,
+        Meta returns to us: your Instagram account ID (a pseudonymous identifier), your username,
+        and your profile picture URL. We do not receive your Instagram password, private messages,
+        direct messages, or financial information.
+      </p>
+
+      <h3>3.4 Future Platform Integrations</h3>
       <p>
         For any additional platforms we integrate with in the future, we will list the relevant
         permissions, data received, and applicable third-party privacy policies in an updated
@@ -234,6 +271,14 @@
           including the Limited Use requirements.
         </li>
         <li>
+          <strong>Meta Platforms, Inc. / Instagram (data recipient &amp; independent controller):</strong>
+          When you log in via Instagram or publish content, your authentication token and content
+          are transmitted directly to Meta's API servers, which may be located outside the EEA.
+          Meta processes this data as an independent data controller under its own
+          <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Meta Privacy Policy</a>.
+          We are not responsible for Meta's subsequent processing of your data.
+        </li>
+        <li>
           <strong>Cloud hosting &amp; infrastructure providers:</strong> Trusted data processors
           (e.g., web hosting and CDN providers) who store and serve the Service on our behalf.
           These providers are contractually bound via Data Processing Agreements (DPAs) to process
@@ -269,6 +314,10 @@
             <td>Duration of active account; deleted within <strong>30 days</strong> of deletion request or authorization revocation</td>
           </tr>
           <tr>
+            <td>Instagram username, profile picture URL, Instagram account ID</td>
+            <td>Duration of active account; deleted within <strong>30 days</strong> of deletion request or authorization revocation</td>
+          </tr>
+          <tr>
             <td>Published content metadata (title, description, publish status)</td>
             <td>Up to <strong>90 days</strong> after publication, then deleted; or immediately on request</td>
           </tr>
@@ -293,8 +342,9 @@
       <p>
         <strong>How to request deletion:</strong> Send an email to
         <a href="mailto:contacts@grapjesmaker.com">contacts@grapjesmaker.com</a> with the subject line
-        <em>"Data Deletion Request"</em> and include your TikTok display name or Open ID, or your
-        YouTube / Google display name or account ID, so we can locate your records. We will confirm
+        <em>"Data Deletion Request"</em> and include your TikTok display name or Open ID, your
+        YouTube / Google display name or account ID, or your Instagram username or account ID,
+        so we can locate your records. We will confirm
         deletion within <strong>30 days</strong> of receipt, except where retention is required by
         law (e.g., statutory accounting records).
       </p>
@@ -309,6 +359,12 @@
         You may revoke the Service's YouTube / Google authorization at any time from your
         <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google account permissions page</a>.
         Revoking authorization immediately stops the Service from accessing your YouTube account;
+        we will delete the associated data within 30 days.
+      </p>
+      <p>
+        You may revoke the Service's Instagram authorization at any time from your Instagram
+        account settings under <em>Settings → Apps and Websites</em>.
+        Revoking authorization immediately stops the Service from accessing your Instagram account;
         we will delete the associated data within 30 days.
       </p>
 
@@ -357,7 +413,7 @@
       <h2>12. Security &amp; Breach Notification</h2>
       <p>We implement the following technical and organisational measures to protect your personal data:</p>
       <ul>
-        <li><strong>Encryption in transit:</strong> All communication between your browser and our servers uses TLS 1.2 or higher (HTTPS). Data transmitted to TikTok's API is likewise protected by TLS.</li>
+        <li><strong>Encryption in transit:</strong> All communication between your browser and our servers uses TLS 1.2 or higher (HTTPS). Data transmitted to TikTok's, YouTube's, and Instagram's APIs is likewise protected by TLS.</li>
         <li><strong>Encryption at rest:</strong> Any personal data stored on our infrastructure is encrypted at rest using industry-standard algorithms (AES-256 or equivalent).</li>
         <li><strong>Access controls:</strong> Access to personal data is restricted to authorised personnel on a need-to-know basis, protected by strong authentication.</li>
         <li><strong>Minimal data collection:</strong> We collect only the data strictly necessary to operate the Service, reducing risk by design.</li>
@@ -422,6 +478,17 @@
             <td>Google may set its own cookies on its domain during the OAuth login flow. These are governed by Google's own
               <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Cookie Policy</a>.</td>
             <td>As defined by Google</td>
+          </tr>
+          <tr>
+            <td>Instagram / Meta OAuth state (first-party, transient)</td>
+            <td>A short-lived CSRF token used during the Instagram OAuth login flow to prevent request forgery</td>
+            <td>Deleted immediately after the OAuth callback completes</td>
+          </tr>
+          <tr>
+            <td>Meta / Instagram cookies (third-party)</td>
+            <td>Meta may set its own cookies on its domain during the OAuth login flow. These are governed by Meta's own
+              <a href="https://www.facebook.com/privacy/policies/cookies/" target="_blank" rel="noopener noreferrer">Cookie Policy</a>.</td>
+            <td>As defined by Meta</td>
           </tr>
         </tbody>
       </table>
