@@ -173,6 +173,95 @@ main {
   background: var(--brand-primary);
 }
 
+/* ─── How It Works Section ──────────────────────────────────────────────── */
+.how-it-works {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.how-it-works h2 {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.step {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+}
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  border-radius: 50%;
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.step h3 {
+  font-size: var(--font-base);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.step p {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ─── Features Section ───────────────────────────────────────────────────── */
+.features {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  text-align: center;
+}
+.features h2 {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+.features-list {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+.features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.features-list li:last-child {
+  border-bottom: none;
+}
+.features-list strong {
+  color: var(--text);
+}
+
 /* ─── About Section ─────────────────────────────────────────────────────── */
 .about {
   max-width: var(--max-w);
