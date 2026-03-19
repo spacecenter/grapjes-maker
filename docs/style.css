@@ -371,6 +371,18 @@ main {
   color: var(--text-muted);
 }
 .info-box strong { color: var(--text); }
+.info-box-warning {
+  background: rgba(220, 38, 38, 0.12);
+  border-left: 3px solid #f87171;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  font-size: var(--font-sm);
+  color: var(--text);
+}
+.info-box-warning strong { color: #fca5a5; }
+.info-box-warning a { color: #f87171; }
+.info-box-warning a:hover { color: #fca5a5; }
 
 /* ─── Footer ────────────────────────────────────────────────────────────── */
 footer {
